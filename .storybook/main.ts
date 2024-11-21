@@ -9,10 +9,17 @@ const config: StorybookConfig = {
     '@chromatic-com/storybook',
     '@storybook/addon-interactions',
     '@stroybook/addon-styling-webpack',
+    '@storybook/addon-themes',
   ],
   framework: {
     name: '@storybook/react-webpack5',
     options: {},
+  },
+
+  staticDirs: ['../dist'],
+
+  typescript: {
+    reactDocgen: 'react-docgen-typescript',
   },
 };
 export default config;

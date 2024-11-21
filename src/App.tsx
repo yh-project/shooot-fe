@@ -1,8 +1,19 @@
 import React from 'react';
-import '@styles/globalStyle.css';
+import { ThemeProvider } from '@emotion/react';
+import { useCurTheme } from './hooks/useCurTheme';
+import { GlobalStyle } from './styles/GlobalStyle';
 
 const App = () => {
-  return <>hello React and Electron!</>;
+  const { curTheme } = useCurTheme();
+
+  return (
+    <>
+      <GlobalStyle />
+      <ThemeProvider theme={curTheme}>
+        <div>hello</div>
+      </ThemeProvider>
+    </>
+  );
 };
 
 export default App;

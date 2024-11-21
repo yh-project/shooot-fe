@@ -7,13 +7,7 @@
     "esModuleInterop": true,
     "outDir": "dist",
     "moduleResolution": "node",
-    "skipLibCheck": true,
-    "baseUrl": "src",
-    "paths": {
-      "@styles/*": ["styles/*"],
-      "@components/*": ["components/*"],
-      "@pages/*": ["pages/*"]
-    }
+    "skipLibCheck": true
   },
-  "include": ["src/**/*", "src/electron/preload.ts"]
+  "include": ["src/**/*"]
 }
