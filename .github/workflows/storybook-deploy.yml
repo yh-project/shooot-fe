@@ -21,7 +21,8 @@ jobs:
           password: ${{ secrets.SSH_PASSWORD }}
           script: |
             # 기존 storybook 중단
-            pkill -f storybook
+            pm2 stop storybook
+            pm2 delete storybook
 
             # 프로젝트 디렉토리 이동
             cd ./Develop/shooot-fe
@@ -33,4 +34,4 @@ jobs:
             npm install
 
             # 스토리북 실행
-            nohup npm run storybook > storybook.log 2>&1 &
+            pm2 start npm --name "storybook" -- run storybook
