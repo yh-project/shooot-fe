@@ -9,9 +9,7 @@ const App = () => {
   return (
     <>
       <GlobalStyle />
-      <ThemeProvider theme={curTheme}>
-        <div>hello</div>
-      </ThemeProvider>
+      <ThemeProvider theme={curTheme}>hello</ThemeProvider>
     </>
   );
 };
