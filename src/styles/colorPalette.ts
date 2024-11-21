@@ -104,3 +104,5 @@ const colorPalette = {
     dark: '#000000',
   },
 };
+
+export default colorPalette;
