@@ -42,6 +42,11 @@ export const Primary: Story = {
     size: 'md',
     color: 'primary',
   },
+  render: (args) => (
+    <Icon {...args}>
+      <RocketLaunchIcon />
+    </Icon>
+  ),
 };
 
 const sizeList: IconSizes[] = [

@@ -22,7 +22,14 @@ export interface SizeIcon {
   '3xl': number;
 }
 
+export interface SizeButton {
+  small: number;
+  medium: number;
+  large: number;
+}
+
 export interface ThemeSize {
   typography: SizeTypography;
   icon: SizeIcon;
+  button: SizeButton;
 }
