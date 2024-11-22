@@ -1,4 +1,4 @@
-import { ColorToggle } from '../../styles/globalThemeTypes';
+import { ColorToggle } from '../../styles/globalTheme/themeColor';
 
 export type ToggleSizes = 'small' | 'medium' | 'large';
 export type ToggleColors = keyof ColorToggle;

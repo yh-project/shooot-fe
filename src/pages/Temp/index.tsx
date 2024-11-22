@@ -1,7 +1,7 @@
 import Toggle from '../../components/Toggle';
 import { useCurTheme } from '../../hooks/useCurTheme';
-import { darkTheme } from '../../styles/darkTheme';
-import { lightTheme } from '../../styles/lightTheme';
+import { darkTheme } from '../../styles/themes/darkTheme';
+import { lightTheme } from '../../styles/themes/lightTheme';
 
 export const Temp = () => {
   const { curTheme, setCurTheme } = useCurTheme();

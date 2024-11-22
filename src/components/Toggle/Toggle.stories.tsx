@@ -67,8 +67,8 @@ export const Colors: Story = {
   },
   render: (args) => (
     <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1rem' }}>
-      {colorList.map((color) => (
-        <Toggle key={color} {...args} color={color} />
+      {colorList.map((color, idx: number) => (
+        <Toggle key={idx} {...args} color={color} />
       ))}
     </div>
   ),

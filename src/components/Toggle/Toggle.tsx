@@ -9,6 +9,7 @@ const Toggle = ({
   size = 'medium',
   color = 'primary',
   handler,
+  ...props
 }: ToggleProps) => {
   const theme = useTheme();
   const [curState, setCurState] = useState<boolean>(false);
@@ -21,6 +22,7 @@ const Toggle = ({
 
         if (handler) handler(!prev);
       }}
+      {...props}
     >
       <div
         css={[s.dotBase(theme, size, color, curState), s.dotSizeVariants[size]]}

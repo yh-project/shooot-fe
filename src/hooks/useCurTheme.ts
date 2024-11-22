@@ -1,5 +1,5 @@
 import { Theme } from '@emotion/react';
-import { lightTheme } from '../styles/lightTheme';
+import { lightTheme } from '../styles/themes/lightTheme';
 import { useState } from 'react';
 
 export const useCurTheme = () => {
