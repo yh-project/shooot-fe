@@ -1,15 +1,3 @@
-// palette
-export interface PaletteBackground {
-  '100': string;
-  '200': string;
-  '300': string;
-}
-
-export interface ThemePalette {
-  background: PaletteBackground;
-}
-
-// color
 export interface ColorToggle {
   primary: string;
   secondary: string;
@@ -39,10 +27,4 @@ export interface ColorTypography {
 export interface ThemeColor {
   toggle: ColorToggle;
   typography: ColorTypography;
-}
-
-// theme
-export interface GlobalTheme {
-  palette: ThemePalette;
-  color: ThemeColor;
 }

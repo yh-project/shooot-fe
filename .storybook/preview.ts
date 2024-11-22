@@ -1,8 +1,8 @@
 import type { Preview } from '@storybook/react';
 import { withThemeFromJSXProvider } from '@storybook/addon-themes';
 import './custom.css';
-import { lightTheme } from '../src/styles/lightTheme';
-import { darkTheme } from '../src/styles/darkTheme';
+import { lightTheme } from '../src/styles/themes/lightTheme';
+import { darkTheme } from '../src/styles/themes/darkTheme';
 import { ThemeProvider } from '@emotion/react';
 
 const preview: Preview = {

@@ -1,12 +1,12 @@
-import colorPalette from './colorPalette';
-import { GlobalTheme } from './globalThemeTypes';
+import colorPalette from '../colorPalette';
+import { GlobalTheme } from '../globalTheme/globalTheme';
 
-export const darkTheme: GlobalTheme = {
+export const lightTheme: GlobalTheme = {
   palette: {
     background: {
-      '100': '#3a3a4a',
-      '200': '#26262e',
-      '300': '#1b1a1f',
+      '100': '#ffffff',
+      '200': '#f6f7f8',
+      '300': '#e0e0e0',
     },
   },
   color: {
@@ -33,6 +33,19 @@ export const darkTheme: GlobalTheme = {
       warning: colorPalette.original.yellow,
       light: colorPalette.original.light,
       dark: colorPalette.original.dark,
+    },
+  },
+  size: {
+    typography: {
+      '3xs': 0.5,
+      '2xs': 0.625,
+      xs: 0.75,
+      sm: 0.875,
+      md: 1,
+      lg: 1.125,
+      xl: 1.25,
+      '2xl': 1.375,
+      '3xl': 1.5,
     },
   },
 };
