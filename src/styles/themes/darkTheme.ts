@@ -1,5 +1,14 @@
 import colorPalette from '../colorPalette';
 import { GlobalTheme } from '../globalTheme/globalTheme';
+import {
+  themeColorToggle,
+  themeColorTypography,
+  themeColorIcon,
+  themeSizeToggle,
+  themeSizeTypography,
+  themeSizeIcon,
+  themeSizeButton,
+} from './commonTheme';
 
 export const darkTheme: GlobalTheme = {
   palette: {
@@ -10,44 +19,9 @@ export const darkTheme: GlobalTheme = {
     },
   },
   color: {
-    toggle: {
-      primary: colorPalette.primary['500'],
-      secondary: colorPalette.secondary['500'],
-      get: colorPalette.get['500'],
-      post: colorPalette.post['500'],
-      put: colorPalette.put['500'],
-      patch: colorPalette.patch['500'],
-      delete: colorPalette.delete['500'],
-      grey: colorPalette.grey['500'],
-    },
-    typography: {
-      primary: colorPalette.primary['500'],
-      secondary: colorPalette.secondary['500'],
-      get: colorPalette.get['500'],
-      post: colorPalette.post['500'],
-      put: colorPalette.put['500'],
-      patch: colorPalette.patch['500'],
-      delete: colorPalette.delete['500'],
-      grey: colorPalette.grey['500'],
-      danger: colorPalette.original.red,
-      warning: colorPalette.original.yellow,
-      light: colorPalette.original.light,
-      dark: colorPalette.original.dark,
-    },
-    icon: {
-      primary: colorPalette.primary['500'],
-      secondary: colorPalette.secondary['500'],
-      get: colorPalette.get['500'],
-      post: colorPalette.post['500'],
-      put: colorPalette.put['500'],
-      patch: colorPalette.patch['500'],
-      delete: colorPalette.delete['500'],
-      grey: colorPalette.grey['500'],
-      danger: colorPalette.original.red,
-      warning: colorPalette.original.yellow,
-      light: colorPalette.original.light,
-      dark: colorPalette.original.dark,
-    },
+    toggle: themeColorToggle,
+    typography: themeColorTypography,
+    icon: themeColorIcon,
     button: {
       contained: {
         primary: {
@@ -152,32 +126,9 @@ export const darkTheme: GlobalTheme = {
     },
   },
   size: {
-    typography: {
-      '3xs': 0.5,
-      '2xs': 0.625,
-      xs: 0.75,
-      sm: 0.875,
-      md: 1,
-      lg: 1.125,
-      xl: 1.25,
-      '2xl': 1.375,
-      '3xl': 1.5,
-    },
-    icon: {
-      '3xs': 0.5,
-      '2xs': 0.625,
-      xs: 0.75,
-      sm: 0.875,
-      md: 1,
-      lg: 1.125,
-      xl: 1.25,
-      '2xl': 1.375,
-      '3xl': 1.5,
-    },
-    button: {
-      small: 2,
-      medium: 2.25,
-      large: 2.5,
-    },
+    toggle: themeSizeToggle,
+    typography: themeSizeTypography,
+    icon: themeSizeIcon,
+    button: themeSizeButton,
   },
 };

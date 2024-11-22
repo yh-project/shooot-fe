@@ -15,7 +15,7 @@ const Toggle = ({
   const [curState, setCurState] = useState<boolean>(false);
   return (
     <div
-      css={[s.containerBase(theme), s.containerSizeVariants[size]]}
+      css={s.containerBase(theme, size)}
       onClick={() => {
         const prev = curState;
         setCurState(!prev);
@@ -24,9 +24,7 @@ const Toggle = ({
       }}
       {...props}
     >
-      <div
-        css={[s.dotBase(theme, size, color, curState), s.dotSizeVariants[size]]}
-      />
+      <div css={s.dotBase(theme, size, color, curState)} />
     </div>
   );
 };

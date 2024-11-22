@@ -1,44 +1,29 @@
-export interface ColorToggle {
-  primary: string;
-  secondary: string;
-  get: string;
-  post: string;
-  put: string;
-  patch: string;
-  delete: string;
-  grey: string;
-}
+export type ColorFull =
+  | 'primary'
+  | 'secondary'
+  | 'get'
+  | 'post'
+  | 'put'
+  | 'patch'
+  | 'delete'
+  | 'grey'
+  | 'danger'
+  | 'warning'
+  | 'light'
+  | 'dark';
 
-export interface ColorTypography {
-  primary: string;
-  secondary: string;
-  get: string;
-  post: string;
-  put: string;
-  patch: string;
-  delete: string;
-  grey: string;
-  danger: string;
-  warning: string;
-  light: string;
-  dark: string;
-}
-
-export interface ColorIcon {
-  primary: string;
-  secondary: string;
-  get: string;
-  post: string;
-  put: string;
-  patch: string;
-  delete: string;
-  grey: string;
-  danger: string;
-  warning: string;
-  light: string;
-  dark: string;
-}
-
+export type ColorToggle = {
+  [color in Exclude<
+    ColorFull,
+    'danger' | 'warning' | 'light' | 'dark'
+  >]: string;
+};
+export type ColorTypography = {
+  [color in ColorFull]: string;
+};
+export type ColorIcon = {
+  [color in ColorFull]: string;
+};
 export interface ColorButtonItems {
   main: string;
   hover: string;
@@ -47,24 +32,16 @@ export interface ColorButtonItems {
 }
 export interface ColorButton {
   contained: {
-    primary: ColorButtonItems;
-    secondary: ColorButtonItems;
-    get: ColorButtonItems;
-    post: ColorButtonItems;
-    put: ColorButtonItems;
-    patch: ColorButtonItems;
-    delete: ColorButtonItems;
-    grey: ColorButtonItems;
+    [color in Exclude<
+      ColorFull,
+      'danger' | 'warning' | 'light' | 'dark'
+    >]: ColorButtonItems;
   };
   outlined: {
-    primary: ColorButtonItems;
-    secondary: ColorButtonItems;
-    get: ColorButtonItems;
-    post: ColorButtonItems;
-    put: ColorButtonItems;
-    patch: ColorButtonItems;
-    delete: ColorButtonItems;
-    grey: ColorButtonItems;
+    [color in Exclude<
+      ColorFull,
+      'danger' | 'warning' | 'light' | 'dark'
+    >]: ColorButtonItems;
   };
 }
 
