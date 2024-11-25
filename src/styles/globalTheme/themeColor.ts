@@ -48,6 +48,7 @@ export interface ColorTextFieldItems {
   main: string;
   active: string;
   disabled: string;
+  font: string;
 }
 export type ColorTextField = {
   filled: {
@@ -66,7 +67,7 @@ export type ColorTextField = {
     [color in Exclude<
       ColorFull,
       'danger' | 'warning' | 'light' | 'dark'
-    >]: Pick<ColorTextFieldItems, 'main'>;
+    >]: Pick<ColorTextFieldItems, 'main' | 'font'>;
   };
 };
 
