@@ -1,5 +1,6 @@
 import colorPalette from '../colorPalette';
 
+// toggle
 export const themeColorToggle = {
   primary: colorPalette.primary['500'],
   secondary: colorPalette.secondary['500'],
@@ -17,6 +18,7 @@ export const themeSizeToggle = {
   large: 1.5,
 };
 
+// typography
 export const themeColorTypography = {
   primary: colorPalette.primary['500'],
   secondary: colorPalette.secondary['500'],
@@ -44,6 +46,7 @@ export const themeSizeTypography = {
   '3xl': 1.5,
 };
 
+// icon
 export const themeColorIcon = {
   primary: colorPalette.primary['500'],
   secondary: colorPalette.secondary['500'],
@@ -71,6 +74,7 @@ export const themeSizeIcon = {
   '3xl': 1.5,
 };
 
+// button, iconbutton
 export const themeSizeButton = {
   small: 2,
   medium: 2.25,
