@@ -74,7 +74,7 @@ export const themeSizeIcon = {
   '3xl': 1.5,
 };
 
-// button, iconbutton
+// button, iconbutton, icontypographybutton
 export const themeSizeButton = {
   small: 2,
   medium: 2.25,
