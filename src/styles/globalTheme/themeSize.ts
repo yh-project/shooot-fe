@@ -22,10 +22,14 @@ export type SizeIcon = {
 export type SizeButton = {
   [size in SizeContent]: number;
 };
+export type SizeTextField = {
+  [size in SizeContent]: number;
+};
 
 export interface ThemeSize {
   toggle: SizeToggle;
   typography: SizeTypography;
   icon: SizeIcon;
   button: SizeButton;
+  textfield: SizeTextField;
 }

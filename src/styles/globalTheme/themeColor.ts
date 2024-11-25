@@ -44,10 +44,36 @@ export interface ColorButton {
     >]: ColorButtonItems;
   };
 }
+export interface ColorTextFieldItems {
+  main: string;
+  active: string;
+  disabled: string;
+}
+export type ColorTextField = {
+  filled: {
+    [color in Exclude<
+      ColorFull,
+      'danger' | 'warning' | 'light' | 'dark'
+    >]: ColorTextFieldItems;
+  };
+  outlined: {
+    [color in Exclude<
+      ColorFull,
+      'danger' | 'warning' | 'light' | 'dark'
+    >]: ColorTextFieldItems;
+  };
+  none: {
+    [color in Exclude<
+      ColorFull,
+      'danger' | 'warning' | 'light' | 'dark'
+    >]: Pick<ColorTextFieldItems, 'main'>;
+  };
+};
 
 export interface ThemeColor {
   toggle: ColorToggle;
   typography: ColorTypography;
   icon: ColorIcon;
   button: ColorButton;
+  textfield: ColorTextField;
 }

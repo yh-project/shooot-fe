@@ -80,3 +80,10 @@ export const themeSizeButton = {
   medium: 2.25,
   large: 2.5,
 };
+
+// textfield
+export const themeSizeTextField = {
+  small: 2,
+  medium: 2.25,
+  large: 2.5,
+};
