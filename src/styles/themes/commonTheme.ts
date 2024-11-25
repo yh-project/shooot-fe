@@ -87,3 +87,25 @@ export const themeSizeTextField = {
   medium: 2.25,
   large: 2.5,
 };
+
+// spinner
+export const themeColorSpinner = {
+  primary: colorPalette.primary['500'],
+  secondary: colorPalette.secondary['500'],
+  get: colorPalette.get['500'],
+  post: colorPalette.post['500'],
+  put: colorPalette.put['500'],
+  patch: colorPalette.patch['500'],
+  delete: colorPalette.delete['500'],
+  grey: colorPalette.grey['500'],
+  danger: colorPalette.original.red,
+  warning: colorPalette.original.yellow,
+  light: colorPalette.original.light,
+  dark: colorPalette.original.dark,
+};
+
+export const themeSizeSpinner = {
+  small: 2,
+  medium: 2.25,
+  large: 2.5,
+};

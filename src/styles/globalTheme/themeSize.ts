@@ -25,6 +25,9 @@ export type SizeButton = {
 export type SizeTextField = {
   [size in SizeContent]: number;
 };
+export type SizeSpinner = {
+  [size in SizeContent]: number;
+};
 
 export interface ThemeSize {
   toggle: SizeToggle;
@@ -32,4 +35,5 @@ export interface ThemeSize {
   icon: SizeIcon;
   button: SizeButton;
   textfield: SizeTextField;
+  spinner: SizeSpinner;
 }

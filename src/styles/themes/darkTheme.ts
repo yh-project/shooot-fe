@@ -9,6 +9,8 @@ import {
   themeSizeIcon,
   themeSizeButton,
   themeSizeTextField,
+  themeSizeSpinner,
+  themeColorSpinner,
 } from './commonTheme';
 
 export const darkTheme: GlobalTheme = {
@@ -261,6 +263,7 @@ export const darkTheme: GlobalTheme = {
         },
       },
     },
+    spinner: themeColorSpinner,
   },
   size: {
     toggle: themeSizeToggle,
@@ -268,5 +271,6 @@ export const darkTheme: GlobalTheme = {
     icon: themeSizeIcon,
     button: themeSizeButton,
     textfield: themeSizeTextField,
+    spinner: themeSizeSpinner,
   },
 };

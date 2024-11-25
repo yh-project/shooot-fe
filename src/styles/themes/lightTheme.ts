@@ -2,10 +2,12 @@ import colorPalette from '../colorPalette';
 import { GlobalTheme } from '../globalTheme/globalTheme';
 import {
   themeColorIcon,
+  themeColorSpinner,
   themeColorToggle,
   themeColorTypography,
   themeSizeButton,
   themeSizeIcon,
+  themeSizeSpinner,
   themeSizeTextField,
   themeSizeToggle,
   themeSizeTypography,
@@ -261,6 +263,7 @@ export const lightTheme: GlobalTheme = {
         },
       },
     },
+    spinner: themeColorSpinner,
   },
   size: {
     toggle: themeSizeToggle,
@@ -268,5 +271,6 @@ export const lightTheme: GlobalTheme = {
     icon: themeSizeIcon,
     button: themeSizeButton,
     textfield: themeSizeTextField,
+    spinner: themeSizeSpinner,
   },
 };

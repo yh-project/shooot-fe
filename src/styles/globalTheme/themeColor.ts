@@ -70,6 +70,9 @@ export type ColorTextField = {
     >]: Pick<ColorTextFieldItems, 'main' | 'font'>;
   };
 };
+export type ColorSpinner = {
+  [color in ColorFull]: string;
+};
 
 export interface ThemeColor {
   toggle: ColorToggle;
@@ -77,4 +80,5 @@ export interface ThemeColor {
   icon: ColorIcon;
   button: ColorButton;
   textfield: ColorTextField;
+  spinner: ColorSpinner;
 }
