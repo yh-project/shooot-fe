@@ -1,10 +1,10 @@
 import { Theme, css, keyframes } from '@emotion/react';
-import { TextFieldColors, TextFieldSizes } from '../TextField/TextField.types';
+import { SpinnerColors, SpinnerSizes } from './Spinner.types';
 
 export const base = (
   theme: Theme,
-  size: TextFieldSizes,
-  color: TextFieldColors
+  size: SpinnerSizes,
+  color: SpinnerColors
 ) => {
   const spin = keyframes`
         from {
@@ -18,8 +18,9 @@ export const base = (
   return css`
     width: ${theme.size.spinner[size]}rem;
     height: ${theme.size.spinner[size]}rem;
+    border: 0.5rem solid #f1f3f5;
+    border-top: 0.5rem solid ${theme.color.spinner[color]};
     border-radius: 999rem;
-    border-top-color: 0.25rem solid ${theme.color.spinner[color]};
     animation: ${spin} 0.7s linear infinite;
   `;
 };
