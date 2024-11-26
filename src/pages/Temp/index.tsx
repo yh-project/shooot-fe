@@ -5,8 +5,13 @@ import { lightTheme } from '../../styles/themes/lightTheme';
 
 export const Temp = () => {
   const { curTheme, setCurTheme } = useCurTheme();
-  const themeHandler = (toggleState: boolean) =>
-    setCurTheme(toggleState ? darkTheme : lightTheme);
+  const themeHandler = (toggleState: boolean) => {
+    setCurTheme(() =>
+      toggleState
+        ? { theme: darkTheme, title: 'dark' }
+        : { theme: lightTheme, title: 'light' }
+    );
+  };
 
   return (
     <div style={{ padding: '3rem' }}>
@@ -19,7 +24,7 @@ export const Temp = () => {
           width: '500px',
           height: '300px',
           marginTop: '3rem',
-          backgroundColor: curTheme.palette.background['100'],
+          backgroundColor: curTheme.theme.palette.background['100'],
         }}
       />
     </div>

@@ -11,7 +11,7 @@ const App = () => {
   return (
     <>
       <GlobalStyle />
-      <ThemeProvider theme={curTheme}>
+      <ThemeProvider theme={curTheme.theme}>
         <Routes>
           <Route path="/" element={<Temp />} />
         </Routes>
