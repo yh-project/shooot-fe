@@ -16,7 +16,7 @@ const config: StorybookConfig = {
     options: {},
   },
 
-  staticDirs: ['../dist'],
+  staticDirs: ['../src'],
 
   typescript: {
     reactDocgen: 'react-docgen-typescript',
